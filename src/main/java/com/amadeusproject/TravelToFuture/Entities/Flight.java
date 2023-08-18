@@ -27,10 +27,10 @@ public class Flight {
     @Column(name = "arrivalAirportId")
     private Long arrivalAirportId;
 
-    @Column(name = "departureDateTime")
+    @Column(name = "departureDateTime", columnDefinition = "TIMESTAMP")
     private LocalDateTime departureDateTime;
 
-    @Column(name = "arrivalDateTime")
+    @Column(name = "arrivalDateTime", columnDefinition = "TIMESTAMP")
     private LocalDateTime arrivalDateTime;
 
     @Column(name = "price")
