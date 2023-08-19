@@ -7,5 +7,5 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public interface FlightRepository extends JpaRepository<Flight, Long> {
-    List<Flight> findByDepartureCityAndArrivalCityAndDepartureDateTimeGreaterThanEqual(String departureCity, String arrivalCity, LocalDateTime departureDateTime);
-}
+    List<Flight> findByDepartureAirportIdAndArrivalAirportIdAndDepartureDateTimeGreaterThanEqual(
+            Long departureAirportId, Long arrivalAirportId, LocalDateTime departureDateTime);}

@@ -16,22 +16,24 @@ import java.time.LocalDateTime;
 @Table(name = "flights")
 public class Flight {
 
-    @Column(name = "flightId")
+    @Column(name = "flight_id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "departureAirportId")
-    private Long departureAirportId;
 
-    @Column(name = "arrivalAirportId")
+    @Column(name = "arrival_airport_id")
     private Long arrivalAirportId;
 
-    @Column(name = "departureDateTime", columnDefinition = "TIMESTAMP")
+    @Column(name = "arrival_date_time")
+    private LocalDateTime arrivalDateTime;
+
+    @Column(name = "departure_airport_id")
+    private Long departureAirportId;
+
+    @Column(name = "departure_date_time")
     private LocalDateTime departureDateTime;
 
-    @Column(name = "arrivalDateTime", columnDefinition = "TIMESTAMP")
-    private LocalDateTime arrivalDateTime;
 
     @Column(name = "price")
     private double price;
