@@ -8,7 +8,7 @@ Created a Spring app with Spring Web, Spring Data JPA, MySQL Driver and Lombok d
 The following properties have been added to the "application.properties" file.
 
 ```
-spring.datasource.url = jdbc:mysql://localhost:3306/enocadb
+spring.datasource.url = jdbc:mysql://localhost:3306/traveltofuture
 spring.datasource.username = root
 spring.datasource.password = 12345
 ```
