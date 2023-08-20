@@ -38,15 +38,19 @@ http://localhost:8080/auth/login.</br>
 After we login, system gives token to authorization.</br>
 With given key we can access all features of project.
 
+--------------------------------
+##### 4 - Scheduled Jobs
+--------------------------------
+Scheduled jobs performs daily.
 
 --------------------------------
-##### 4 - API Designs for Management
+##### 5 - API Designs for Management
 --------------------------------
 This project documented with Swagger.</br>
 With this url, API documentation can be viewed. </br>
 http://localhost:8080/swagger-ui/index.html#/ </br>
 
-
-##### 5 - How do we access data
+--------------------------------
+##### 6 - How do we access data
 --------------------------------
 In the project we have 4 main packages named Entitites, DataAccess, Service, Controller. We have a multi-layered design.
