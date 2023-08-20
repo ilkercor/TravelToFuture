@@ -53,13 +53,11 @@ public class ScheduledJob {
         objectMapper.registerModule(javaTimeModule);
 
         try {
-            // JSON verisini çözümleme ve FlightInfo nesnesini doldurma
             Flight flightInfo = objectMapper.readValue(apiResponse, Flight.class);
             return flightInfo;
         } catch (Exception e) {
-            // JSON çözümleme hatası
             e.printStackTrace();
-            return null; // veya isteğe bağlı bir hata durumu işleme
+            return null;
         }
 
     }
