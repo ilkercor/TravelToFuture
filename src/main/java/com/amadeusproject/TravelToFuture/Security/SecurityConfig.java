@@ -1,5 +1,10 @@
 package com.amadeusproject.TravelToFuture.Security;
 
+import io.swagger.v3.oas.models.Components;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Info;
+import io.swagger.v3.oas.models.security.SecurityRequirement;
+import io.swagger.v3.oas.models.security.SecurityScheme;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -70,6 +75,21 @@ public class SecurityConfig {
     @Bean
     public JWTAuthenticationFilter jwtAuthenticationFilter(){
         return new JWTAuthenticationFilter();
+    }
+
+    @Bean
+    public OpenAPI baseOpenAPI() {
+        SecurityScheme jwtScheme = new SecurityScheme()
+                .type(SecurityScheme.Type.HTTP)
+                .scheme("bearer")
+                .bearerFormat("JWT");
+
+        return new OpenAPI()
+                .components(new Components().addSecuritySchemes("jwt", jwtScheme))
+                .info(new Info().title("Travel to Future Project")
+                        .version("1.0.0")
+                        .description("OpenAPI documentation for Travel to Future Project "))
+                .addSecurityItem(new SecurityRequirement().addList("jwt"));
     }
 
 }
