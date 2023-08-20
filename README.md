@@ -1,5 +1,7 @@
 # Amadeus - Travel to Future Backend Java Case Study
 
+
+--------------------------------
 ##### 1 - Project Creation
 -----------------------
 Created a Spring app with Spring Web, Spring Data JPA, MySQL Driver and Lombok dependencies via [Spring Initializr](https://start.spring.io/).
