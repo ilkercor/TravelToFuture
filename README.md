@@ -23,12 +23,21 @@ or run it via IDE.
 
 Project will start running on "http://localhost:8080"
 
+##### 3 - How to use
+--------------------------------
+Firstly we need an account.</br>
+http://localhost:8080/auth/register</br>
+We can create an account with username and password.</br>
+Then we should login.</br>
+http://localhost:8080/auth/login.</br>
+After we login, system gives token to authorization.</br>
+With given key we can access all features of project.
 
 ##### 4 - API Designs for Management
 --------------------------------
 This project documented with Swagger.</br>
-With this url, API documentation can be viewed. 
-http://localhost:8080/swagger-ui/index.html#/
+With this url, API documentation can be viewed. </br>
+http://localhost:8080/swagger-ui/index.html#/ </br>
 
 
 ##### 5 - How do we access data
