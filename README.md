@@ -11,6 +11,7 @@ spring.datasource.username = root
 spring.datasource.password = 12345
 ```
 
+--------------------------------
 ##### 2 - Running the Project
 --------------------------------
 Now the project is ready to be built and run.
@@ -23,6 +24,8 @@ or run it via IDE.
 
 Project will start running on "http://localhost:8080"
 
+
+--------------------------------
 ##### 3 - How to use
 --------------------------------
 Firstly we need an account.</br>
@@ -33,6 +36,8 @@ http://localhost:8080/auth/login.</br>
 After we login, system gives token to authorization.</br>
 With given key we can access all features of project.
 
+
+--------------------------------
 ##### 4 - API Designs for Management
 --------------------------------
 This project documented with Swagger.</br>
